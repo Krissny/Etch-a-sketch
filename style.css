@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.container{
+    height: 480px;
+    width: 480px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.children{
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128,0.5);
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.btn{
+    margin-bottom: 10px;
+}
