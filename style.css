@@ -14,13 +14,28 @@
     box-sizing: border-box;
 }
 
-.children{
+.children30{
     height: 30px;
     width: 30px;
     box-sizing: border-box;
     margin: 0;
     border: 1px solid rgba(128, 128, 128,0.5);
 }
+.children15{
+    height: 15px;
+    width: 15px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128,0.5);
+}
+.children10{
+    height: 10px;
+    width: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128,0.5);
+}
+
 
 .middle{
     display: flex;
@@ -29,4 +44,7 @@
 }
 .btn{
     margin-bottom: 10px;
+}
+.black{
+    background-color: black;
 }
