@@ -1,4 +1,20 @@
 const div = document.querySelector('.container');
+const rgb = document.querySelector('.rgb');
+let rg = false;
+rgb.onclick = function(){
+    console.log(rg);
+    console.log("clicked");
+    if(rg==true){
+        rg = false;
+        rgb.style.backgroundColor = 'white';
+        rgb.style.color = 'black';
+    }
+    else{
+        rg = true;
+        rgb.style.backgroundColor = 'blue';
+        rgb.style.color = 'white';
+    }
+};
 createGrid(16, div);
 
 const btn = document.querySelectorAll('.btn');
@@ -23,8 +39,17 @@ function createGrid(newGrid, div) {
             divChild.classList.add('children30');
         }
         div.appendChild(divChild);
-        divChild.addEventListener('mousedown', (e) => {
-            e.currentTarget.classList.add('black');
-        });
+        divChild.addEventListener('mousedown',changeColor);
+    }
+}
+function changeColor(ev){
+    if(rg){
+        const r = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        ev.currentTarget.style.backgroundColor =`rgb(${r},${b},${g})`;
+    }
+    else{
+        ev.currentTarget.style.backgroundColor= 'black';
     }
 }
