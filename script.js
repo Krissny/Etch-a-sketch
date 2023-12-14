@@ -15,6 +15,7 @@ rgb.onclick = function(){
         rgb.style.color = 'white';
     }
 };
+
 createGrid(16, div);
 
 const btn = document.querySelectorAll('.btn');
