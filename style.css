@@ -13,6 +13,21 @@
     flex-wrap: wrap;
     box-sizing: border-box;
 }
+.utility{
+    background-color: white;
+    color: black;
+}
+.children10:hover{
+    background-color: rgb(94, 92, 92);
+}
+
+.children15:hover{
+    background-color: rgb(94, 92, 92);
+}
+
+.children30:hover{
+    background-color: rgb(94, 92, 92);
+}
 
 .children30{
     height: 30px;
@@ -42,9 +57,9 @@
     justify-content: center;
     gap: 6px;
 }
-.btn{
+button{
     margin-bottom: 10px;
 }
-.black{
-    background-color: black;
+.white{
+    background-color: white;
 }
